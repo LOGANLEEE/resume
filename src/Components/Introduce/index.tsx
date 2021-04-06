@@ -7,12 +7,9 @@ interface Props {
 
 export const Introduce: FunctionComponent<Props & HTMLAttributes<HTMLDivElement>> = ({ className }) => (
 	<Wrapper className={className}>
-		프론트엔드, 빅데이터에 관심이 많은 개발자입니다.
+		Front, Bigdata, Automation에 관심이 많은 개발자입니다.
 		<br />
-		프론트엔드, 빅데이터에 관심이 많은 개발자입니다.
+		평소 불편하거나 필요하다고 생각되는 기능들을 직접 개발하여 사용하고 있습니다.
 		<br />
-		프론트엔드, 빅데이터에 관심이 많은 개발자입니다.
-		<br />
-		프론트엔드, 빅데이터에 관심이 많은 개발자입니다.
 	</Wrapper>
 );

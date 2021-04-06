@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
-	width: 100%;
+export const Wrapper = styled.div<{ open: boolean }>`
+	max-width: 100%;
 	border-radius: 16px;
 	background-color: #1b2938;
 	padding: 1%;
@@ -10,9 +10,11 @@ export const Wrapper = styled.div`
 		flex-direction: row;
 		display: flex;
 		flex-wrap: wrap;
-
+		padding-bottom: ${({ open }) => (open ? 1 : 0)}%;
+		
 		.title {
 			width: 50%;
+			font-size: 1.8rem;
 			justify-content: flex-start;
 		}
 
@@ -29,6 +31,8 @@ export const Wrapper = styled.div`
 		flex-direction: column;
 		flex-wrap: wrap;
 		gap: 10px;
+		font-size: 1.3rem;
+
 		.odd {
 			background-color: #2d3c4a;
 		}
@@ -51,10 +55,10 @@ export const ListWrapper = styled.div`
 		text-decoration: underline;
 	}
 
-	.block1 {
+	.list-block1 {
 	}
 
-	.block2 {
+	.list-block2 {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;

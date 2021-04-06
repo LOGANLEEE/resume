@@ -16,11 +16,11 @@ export const Carrier: FunctionComponent<Props & HTMLAttributes<HTMLDivElement>> 
 	const set_detail_info = useSetRecoilState(detail_info_state);
 
 	return (
-		<Wrapper className={className}>
+		<Wrapper className={className} open={open}>
 			<div className='block1'>
 				<div className='title'>경력사항 {data.length}건의 프로젝트 (2018.06.18 ~ 2020.12.23)</div>
 				<div className='btn' onClick={() => setOpen(!open)}>
-					{open ? <ExpandLess /> : <ExpandMore />}
+					{open ? <ExpandLess fontSize='large' /> : <ExpandMore fontSize='large' />}
 				</div>
 			</div>
 			{open && (
@@ -53,10 +53,10 @@ const List: FunctionComponent<{ data: Data } & HTMLAttributes<HTMLDivElement>> =
 	data: { period, project, role },
 }) => (
 	<ListWrapper onClick={onClick} className={className} key={period + project}>
-		<div className='block1'>
+		<div className='list-block1'>
 			<div>{project}</div>
 		</div>
-		<div className='block2'>
+		<div className='list-block2'>
 			<div> {role}</div>
 			<div> {period}</div>
 		</div>

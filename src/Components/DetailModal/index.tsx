@@ -31,7 +31,7 @@ export const DetailModal: FunctionComponent<Props & HTMLAttributes<HTMLDivElemen
 					reset_detail_info();
 				}}>
 				<ModalBodayWrapper>
-					<div>{project}</div>
+					<div className='project'>{project}</div>
 					<div className='block1'>
 						<div>{location}</div>
 						<div>{period}</div>
@@ -40,9 +40,9 @@ export const DetailModal: FunctionComponent<Props & HTMLAttributes<HTMLDivElemen
 						<div> {role}</div>
 						<div> {architecture}</div>
 					</div>
-					<div> {description}</div>
+					<div className='description'> {description}</div>
 					{article && (
-						<div>
+						<div className='aritcle'>
 							<a href={article} target='_blank' rel='noreferrer'>
 								참조기사
 							</a>

@@ -18,5 +18,6 @@
 		"baseUrl": "./src",
 		"downlevelIteration": true
 	},
-	"include": ["src"]
+	"include": ["./src/**/*"],
+	"exclude": ["./src/asset"]
 }

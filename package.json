@@ -35,8 +35,9 @@
 		"p": "yarn prisma introspect && yarn prisma generate",
 		"eject": "react-scripts eject",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build && git add ./build && git commit -m 'build gh-page' && git push",
-		"d": "gh-pages -d build && git add build && git commit -m 'build gh-page' && git push"
+		"deploy": "gh-pages -d build",
+		"g": "git add build/* && git commit -m 'build gh-page' && git push",
+		"a": "yarn deploy && git add build/* && git commit -m 'build gh-page' && git push"
 	},
 	"eslintConfig": {
 		"extends": [

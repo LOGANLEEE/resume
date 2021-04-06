@@ -1,6 +1,6 @@
 import React, { FunctionComponent, HTMLAttributes, useState } from 'react';
 import { ExpandMore, ExpandLess } from '@material-ui/icons';
-import { data, Data } from 'asset/listData';
+import { data, Data } from 'data/listData';
 
 import { Wrapper, ListWrapper } from './Wrapper';
 import { DetailModal } from 'Components/DetailModal';

@@ -13,14 +13,14 @@ export const Wrapper = styled.div<{ open: boolean }>`
 		padding-bottom: ${({ open }) => (open ? 1 : 0)}%;
 		
 		.title {
-			width: 50%;
+			width: 80%;
 			font-size: 1.8rem;
 			justify-content: flex-start;
 		}
 
 		.btn {
 			cursor: pointer;
-			width: 50%;
+			width: 20%;
 			justify-content: flex-end;
 			text-align: end;
 		}

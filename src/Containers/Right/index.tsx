@@ -9,6 +9,8 @@ export const Right: FunctionComponent<Props & HTMLAttributes<HTMLDivElement>> = 
 		<div className='block1'>
 			<Carrier />
 		</div>
-		<div>NONE</div>
+		<div>사용기술</div>
+		<div>활동내역</div>
+		<div>학력</div>
 	</Wrapper>
 );

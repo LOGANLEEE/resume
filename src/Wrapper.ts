@@ -6,10 +6,9 @@ export const Wrapper = styled(animated.div)`
 	max-width: 100vw !important;
 	overflow-y: scroll;
 
-	background-color: ${({ theme: { is_dark, dark_back_ground, white_back_ground } }) =>
-		is_dark ? dark_back_ground : white_back_ground};
-	color: ${({ theme: { is_dark, dark_back_ground, white_back_ground } }) =>
-		is_dark ? white_back_ground : dark_back_ground};
+
+	background-color: ${({ theme: { is_dark, dark, light } }) => (is_dark ? dark : light)} !important;
+	color: ${({ theme: { is_dark, dark, light } }) => (is_dark ? light : dark)} !important;
 
 	display: flex;
 	flex-direction: row;

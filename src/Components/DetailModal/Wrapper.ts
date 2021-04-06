@@ -10,6 +10,7 @@ export const Wrapper = styled(animated.div)`
 export const StyledModal = styled(Modal)`
 	border: 1px solid silver;
 	background-color: #132433;
+	color: ${({ theme: { is_dark, dark, light } }) => (is_dark ? light : dark)} !important;
 	border-radius: 16px;
 	top: 8% !important;
 	left: 29% !important;
@@ -24,9 +25,8 @@ export const ModalBodayWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	gap: 10%;
 	padding: 1%;
-    word-break: break-all;
+	word-break: break-all;
 	text-align: center;
 
 	.block1 {

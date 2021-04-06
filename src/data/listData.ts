@@ -14,7 +14,7 @@ export const data: Data[] = [
 		period: `2018.06.18 - 2018.07.09`,
 		role: `프론트개발`,
 		architecture: `Micro Service Architecture`,
-		description: `위사의 레거시 시스템을 마이그레이션하기 위한 웹사이트 개발 및 연동 API 개발 `,
+		description: `노후된 레거시 시스템 마이그레이션 및 차세대 서비스 개발 및 연동 API 개발 `,
 		location: `서울시 구로구`,
 	},
 	{

@@ -12,6 +12,7 @@
 		"prisma": "^2.20.1",
 		"react": "^17.0.2",
 		"react-app-polyfill": "^2.0.0",
+		"react-device-detect": "^1.17.0",
 		"react-dom": "^17.0.2",
 		"react-facebook-login": "^4.1.1",
 		"react-google-login": "^5.2.2",
@@ -34,7 +35,8 @@
 		"p": "yarn prisma introspect && yarn prisma generate",
 		"eject": "react-scripts eject",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build"
+		"deploy": "gh-pages -d build && git add ./build && git commit -m 'build gh-page' && git push",
+		"d": "gh-pages -d build && git add build && git commit -m 'build gh-page' && git push"
 	},
 	"eslintConfig": {
 		"extends": [

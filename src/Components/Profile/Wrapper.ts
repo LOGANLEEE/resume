@@ -1,10 +1,14 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-
-	img {
-		height: 100%;
-		width: 100%;
-		border-radius: 32px;
+	.bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+		will-change: opacity;
 	}
 `;

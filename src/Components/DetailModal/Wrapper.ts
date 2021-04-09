@@ -29,20 +29,18 @@ export const ModalBodayWrapper = styled.div`
 	word-break: break-all;
 	text-align: center;
 	font-size: 1.2rem;
+	justify-content: space-around;
 
 	.project {
-		padding-bottom: 10%;
 	}
 
 	.block1 {
-		padding-bottom: 10%;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
 	.block2 {
-		padding-bottom: 10%;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -50,9 +48,7 @@ export const ModalBodayWrapper = styled.div`
 	}
 
 	.description {
-		padding-bottom: 10%;
 	}
 	.article {
-		padding-bottom: 10%;
 	}
 `;

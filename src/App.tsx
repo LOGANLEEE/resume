@@ -16,11 +16,17 @@ const App = () => {
 	document.title = 'Get infomation of how to be teacher in korea!';
 	const spring_info = useSpring({ opacity: 1, from: { opacity: 0 } });
 	const [{ visible }, set_alert] = useRecoilState(alert_state);
-
+	const date = new Date();
 	useEffect(() => {
 		if (!isChrome) {
 			set_alert({
-				message: '이 웹사이트는 크롬 브라우저에 최적화되어 있습니다.',
+				message: `크롬 브라우저에 최적화되어 있으며 현재 계속 중입니다. (${date.getMonth()+1}/${date.getDate()} 기준)`,
+				severity: 'info',
+				visible: true,
+			});
+		} else {
+			set_alert({
+				message: `현 사이트는 계속 업데이트 중입니다. (${date.getMonth()+1}/${date.getDate()} 기준)`,
 				severity: 'info',
 				visible: true,
 			});

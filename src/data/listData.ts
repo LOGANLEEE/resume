@@ -82,3 +82,4 @@ export const data: Data[] = [
 		location: `충북 청주시`,
 	},
 ];
+

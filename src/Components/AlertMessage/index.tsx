@@ -17,7 +17,7 @@ export const AlertMessage: FunctionComponent<Props> = () => {
 	});
 
 	useEffect(() => {
-		setTimeout(() => reset_alert_state(), 1500);
+		setTimeout(() => reset_alert_state(), 2000);
 	}, [message, severity]);
 
 	return (

@@ -1,5 +1,5 @@
 import { atom } from 'recoil';
-import { Data } from 'asset/listData';
+import { Data } from 'data/listData';
 
 export const theme_info_state = atom({
 	key: 'theme_info_state',

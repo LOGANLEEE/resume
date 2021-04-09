@@ -17,11 +17,9 @@ export const Carrier: FunctionComponent<Props & HTMLAttributes<HTMLDivElement>> 
 
 	return (
 		<Wrapper className={className} open={open}>
-			<div className='block1'>
+			<div className='block1' onClick={() => setOpen(!open)}>
 				<div className='title'>경력사항 {data.length}건의 프로젝트 (2018.06.18 ~ 2020.12.23)</div>
-				<div className='btn' onClick={() => setOpen(!open)}>
-					{open ? <ExpandLess fontSize='large' /> : <ExpandMore fontSize='large' />}
-				</div>
+				<div className='btn'>{open ? <ExpandLess fontSize='large' /> : <ExpandMore fontSize='large' />}</div>
 			</div>
 			{open && (
 				<div className='list'>

@@ -5,6 +5,7 @@ export const Wrapper = styled.div<{ open: boolean }>`
 	border-radius: 16px;
 	background-color: #1b2938;
 	padding: 1%;
+	cursor: pointer;
 
 	.block1 {
 		flex-direction: row;
@@ -19,7 +20,6 @@ export const Wrapper = styled.div<{ open: boolean }>`
 		}
 
 		.btn {
-			cursor: pointer;
 			width: 20%;
 			justify-content: flex-end;
 			text-align: end;

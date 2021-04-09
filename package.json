@@ -37,7 +37,7 @@
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d build",
 		"g": "git add build/* && git commit -m 'build gh-page' && git push",
-		"a": "yarn deploy && git add build/* && git commit -m 'build gh-page' && git push"
+		"d": "yarn deploy && git add build/* && git commit -m 'build gh-page' && git push"
 	},
 	"eslintConfig": {
 		"extends": [

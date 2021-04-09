@@ -6,13 +6,13 @@ export const Wrapper = styled(animated.div)`
 	max-width: 100vw !important;
 	overflow-y: scroll;
 
-
 	background-color: ${({ theme: { is_dark, dark, light } }) => (is_dark ? dark : light)} !important;
 	color: ${({ theme: { is_dark, dark, light } }) => (is_dark ? light : dark)} !important;
 
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+
 	padding: 0.5%;
 
 	.left {

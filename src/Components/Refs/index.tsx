@@ -24,13 +24,16 @@ export const Refs: FunctionComponent<Props & HTMLAttributes<HTMLDivElement>> = (
 			/>
 		</div>
 		<div className='block2'>
-			<div onClick={() => window.open('http://stastica.net', '_blank')}>
+			<div className='title'>- Portfolios</div>
+			<div className='list' onClick={() => window.open('http://stastica.net', '_blank')}>
 				<Work fontSize='large' className='icon' />
 				stastica.net
 			</div>
-			<div onClick={() => window.open('https://github.com/LOGANLEEE/front_like_to_be_teacher', '_blank')}>
+			<div
+				className='list'
+				onClick={() => window.open('https://github.com/LOGANLEEE/front_like_to_be_teacher', '_blank')}>
 				<AlarmOn fontSize='large' className='icon' />
-				liketobeteacher.com (오픈 예정)
+				liketobeteacher.com (예정)
 			</div>
 		</div>
 	</Wrapper>

@@ -13,7 +13,7 @@ import { Wrapper } from './Wrapper';
 import { isChrome } from 'react-device-detect';
 
 const App = () => {
-	document.title = 'Get infomation of how to be teacher in korea!';
+	document.title = '개발자 Logan 입니다. 잘부탁드립니다.';
 	const spring_info = useSpring({ opacity: 1, from: { opacity: 0 } });
 	const [{ visible }, set_alert] = useRecoilState(alert_state);
 	const date = new Date();

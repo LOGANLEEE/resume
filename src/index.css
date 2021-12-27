@@ -1,7 +1,24 @@
+@font-face {
+	font-family: 'NotoSansKR';
+	/* src: url(./asset/font/NotoSansKR-Regular.otf); */
+	src: url(asset/font/NotoSansKR-Regular.otf);
+}
+
+@font-face {
+	font-family: 'NotoSansKR';
+	/* src: url(./assets/font/NotoSansKR-Bold.otf); */
+	src: url(asset/font/NotoSansKR-Bold.otf);
+	font-weight: bold;
+}
+html,
+body,
+#root {
+	width: 100%;
+	height: 100%;
+}
+
 body {
 	margin: 0;
-	height: 100%;
-	width: 100%;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
 		sans-serif;
 	-webkit-font-smoothing: antialiased;

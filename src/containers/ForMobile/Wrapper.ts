@@ -27,5 +27,6 @@ export const Wrapper = styled.div<Props>`
 		color: white;
 		display: flex;
 		flex-direction: column;
+		font-size: 11px;
 	}
 `;

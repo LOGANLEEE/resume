@@ -1,10 +1,10 @@
+import { Button } from 'components/Button';
 import { ImageComp } from 'components/ImageComp';
 import { TimeLine } from 'components/TimeLine';
-import { TopNav } from 'components/TopNav';
-import React from 'react';
+import React, { memo, useCallback, useContext, useState } from 'react';
 import { Wrapper } from './Wrapper';
 
-export const ForMobile = () => {
+export const ForMobile = memo(() => {
 	return (
 		<Wrapper>
 			<div className='intro'>
@@ -20,7 +20,7 @@ export const ForMobile = () => {
 					<span className='desc'>Full Stack Developer</span> */}
 					LOGAN LEE 🇰🇷
 					<br />
-					FullStack Developer(4y)
+					Fullstack Developer(4y)
 					<br />
 					<br />
 				</div>
@@ -29,4 +29,6 @@ export const ForMobile = () => {
 			<TimeLine />
 		</Wrapper>
 	);
-};
+});
+
+ForMobile.displayName = 'ForMobile';

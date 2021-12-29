@@ -1,80 +1,70 @@
 import React from 'react';
 import { Wrapper } from './Wrapper';
 import { Chrono } from 'react-chrono';
+import { TimelineItemModel } from 'react-chrono/dist/models/TimelineItemModel';
 
 export const TimeLine = () => {
-	const items = [
+	const items: TimelineItemModel[] = [
 		{
-			title: 'May 1940',
-			cardTitle: 'Dunkirk',
-			url: 'http://www.history.com',
-			cardSubtitle: 'Men of the British Expeditionary Force (BEF) wade out to..',
-			cardDetailedText: 'Men of the British Expeditionary Force (BEF) wade out to..',
-			// media: {
-			// 	type: 'IMAGE',
-			// 	source: {
-			// 		url: 'http://someurl/image.jpg',
-			// 	},
-			// },
+			title: '06.2018',
+			url: 'http://www.kb-sys.co.kr/en/index',
+			cardTitle: `KBSYS`,
+			cardSubtitle: '$6 million in annual sales',
+			cardDetailedText: [`KBSYS`],
 		},
 		{
-			title: 'May 1940',
-			cardTitle: 'Dunkirk',
-			url: 'http://www.history.com',
-			cardSubtitle: 'Men of the British Expeditionary Force (BEF) wade out to..',
-			cardDetailedText: 'Men of the British Expeditionary Force (BEF) wade out to..',
-			// media: {
-			// 	type: 'IMAGE',
-			// 	source: {
-			// 		url: 'http://someurl/image.jpg',
-			// 	},
-			// },
+			title: ' ',
+			url: 'https://eng.sk.com',
+			cardTitle: `SK C&C`,
+			cardSubtitle: '$1.8 billion in annual sales',
+			cardDetailedText: [`Participated in SK C&C's Digital Workplace platform project`],
 		},
 		{
-			title: 'May 1940',
-			cardTitle: 'Dunkirk',
-			url: 'http://www.history.com',
-			cardSubtitle: 'Men of the British Expeditionary Force (BEF) wade out to..',
-			cardDetailedText: 'Men of the British Expeditionary Force (BEF) wade out to..',
-			// media: {
-			// 	type: 'IMAGE',
-			// 	source: {
-			// 		url: 'http://someurl/image.jpg',
-			// 	},
-			// },
+			title: ' ',
+			url: 'https://eng.sk.com',
+			cardTitle: `SK C&C`,
+			cardSubtitle: '$1.8 billion in annual sales',
+			cardDetailedText: [`Participated in SK C&C's ChatBot platform project`],
 		},
 		{
-			title: 'May 1940',
-			cardTitle: 'Dunkirk',
-			url: 'http://www.history.com',
-			cardSubtitle: 'Men of the British Expeditionary Force (BEF) wade out to..',
-			cardDetailedText: 'Men of the British Expeditionary Force (BEF) wade out to..',
-			// media: {
-			// 	type: 'IMAGE',
-			// 	source: {
-			// 		url: 'http://someurl/image.jpg',
-			// 	},
-			// },
+			title: ' ',
+			url: 'https://www.magnachip.com',
+			cardTitle: 'MagnaChip (semiconductor manufacturing)',
+			cardSubtitle: '$567 million in annual sales',
+			cardDetailedText: [`Participation in legacy system migration and new implementation project`],
 		},
 		{
-			title: 'May 1940',
-			cardTitle: 'Dunkirk',
-			url: 'http://www.history.com',
-			cardSubtitle: 'Men of the British Expeditionary Force (BEF) wade out to..',
-			cardDetailedText: 'Men of the British Expeditionary Force (BEF) wade out to..',
-			// media: {
-			// 	type: 'IMAGE',
-			// 	source: {
-			// 		url: 'http://someurl/image.jpg',
-			// 	},
-			// },
+			title: ' ',
+			url: 'https://en.wikipedia.org/wiki/Woori_Bank',
+			cardTitle: 'Woori Bank',
+			cardSubtitle: '$26 billin in annual sales',
+			cardDetailedText: `Participated in "AI Hub" project`,
+		},
+		{
+			title: '04.2021',
+			url: 'http://www.kb-sys.co.kr/en/index',
+			cardTitle: 'BTG Crop (Seoul) ',
+			cardSubtitle: '$19 million in annual sales',
+			cardDetailedText: '',
 		},
 	];
+
 	return (
 		<Wrapper>
-			<div style={{ width: '500px', height: '950px' }}>
-				<Chrono items={items} mode='VERTICAL_ALTERNATING' />
-			</div>
+			<Chrono
+				items={items}
+				mode='VERTICAL'
+				scrollable={false}
+				hideControls
+				useReadMore={false}
+				theme={{
+					primary: 'white',
+					secondary: 'red',
+					cardBgColor: '#4e599d',
+					cardForeColor: 'white',
+					titleColor: '#0f52ba',
+				}}
+			/>
 		</Wrapper>
 	);
 };

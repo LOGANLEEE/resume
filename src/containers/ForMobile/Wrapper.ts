@@ -9,16 +9,17 @@ export const Wrapper = styled.div<Props>`
 		flex-direction: row;
 
 		.info {
+			display: flex;
 			flex-direction: column;
+			justify-content: center;
 			width: 50%;
 			color: white;
 			text-align: center;
 			line-height: 30px;
-			.name {
-				text-align: center;
-			}
-			.desc {
-				text-align: center;
+
+			a {
+				color: white;
+				text-decoration: none;
 			}
 		}
 	}
@@ -27,6 +28,5 @@ export const Wrapper = styled.div<Props>`
 		color: white;
 		display: flex;
 		flex-direction: column;
-		font-size: 11px;
 	}
 `;

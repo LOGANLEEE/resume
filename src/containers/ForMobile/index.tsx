@@ -5,7 +5,7 @@ import { Wrapper } from './Wrapper';
 import profile_image from 'asset/profile.jpg';
 import { activityItems, companyItems, educationItems } from './timeLineItems';
 
-export const ForMobile = memo(() => {
+const ForMobile = memo(() => {
 	return (
 		<Wrapper>
 			<div className='intro'>
@@ -38,3 +38,4 @@ export const ForMobile = memo(() => {
 });
 
 ForMobile.displayName = 'ForMobile';
+export default ForMobile;

@@ -5,7 +5,7 @@ import { activityItems, companyItems, educationItems } from 'containers/ForMobil
 import React from 'react';
 import { Wrapper } from './Wrapper';
 
-export const ForPC = () => {
+const ForPC = () => {
 	return (
 		<Wrapper>
 			<div className='intro'>
@@ -34,3 +34,4 @@ export const ForPC = () => {
 		</Wrapper>
 	);
 };
+export default ForPC;
